@@ -1,6 +1,5 @@
 <a id="immortalwrt-在线编译"></a>
-# ImmortalWrt 在线编译 by oppen321
-
+# ImmortalWrt 在线编译 - H29K
 
 欢迎来到 ImmortalWrt 的在线编译仓库！该项目通过 GitHub Actions 自动构建适用于各种设备的 ImmortalWrt 固件。无论您是定制固件还是只需要最新的构建，本文档将帮助您快速入门。
 
@@ -8,48 +7,6 @@
 
 - 自动化构建： GitHub Actions 会根据您的配置自动编译固件。
 - 可定制化： 轻松修改配置文件以满足您的特定需求。
-- 插件集成： 包含流行的插件，如 PassWall、OpenClash、HomeProxy 等。
-- Docker支持： 加入luci-app-dockerman，用户可以在设备上跑docker项目。
-- iStore支持： 加入iStore，用户可以在iStore里下载想要的插件
-- 每日更新： 保持固件与 ImmortalWrt 项目的最新变更同步。
-
-## 使用方法
-
-### 1. Fork 此仓库
-
-首先，将此仓库 Fork 到您的 GitHub 账户中。
-
-### 2. 配置您的构建
-
-修改配置文件以指定您所需的设置：
-
-- .config: 包含构建的基础配置。根据需要调整以包含或排除功能和软件包。
-- diy-scipt.sh: 自定义预编译设置（例如添加源），后期编译自定义（例如修改镜像，添加主题）。
-
-### 3. 触发构建
-1.修改增加仓库TOKEN密钥。
-2.配置好设置后，您可以手动触发构建，也可以点击Start激活编译程序根据您的提交自动构建。
-
-### 4. 下载固件
-
-构建完成后，您可以从 GitHub 仓库的 "Actions" 选项卡中下载编译好的固件。
-
-## 插件与软件包
-
-该仓库集成了几个流行的插件：
-
-- PassWall
-- passwall2
-- OpenClash
-- HomeProxy
-- Mihomo
-- ssr-plus
-- AdGuardhome
-- Mosdns
-- Smartdns
-- ddns-go
-- dockerman
-- Istore
 
 ### 自定义插件仓库
 
