@@ -28,9 +28,9 @@ function git_sparse_clone() {
 }
 
 # 科学上网插件
-git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
-git_sparse_clonehttps://github.com/morytyann/OpenWrt-mihomo.git
-git clone https://github.com/Thaolga/luci-app-nekoclash  package/luci-app-nekoclash
+#git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
+#git_sparse_clonehttps://github.com/morytyann/OpenWrt-mihomo.git
+#git clone https://github.com/Thaolga/luci-app-nekoclash  package/luci-app-nekoclash
 
 # 更换golong 1.23
 git clone https://github.com/oppen321/golang feeds/packages/lang/golang
@@ -40,12 +40,12 @@ git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # Mosdns
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # iStoreOS
-git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
-git_sparse_clone main https://github.com/linkease/istore luci
+#git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
+#git_sparse_clone main https://github.com/linkease/istore luci
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
