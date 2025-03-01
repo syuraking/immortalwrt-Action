@@ -31,7 +31,7 @@ function git_sparse_clone() {
 
 # 加入第三方源
 git clone --depth=1 https://github.com/kenzok8/small package/small
-git clone --depth=1 https://github.com/kenzok8/openwrt-packages package/kenzo
+git clone --depth=1 https://github.com/kenzok8/jell package/kenzo
 
 
 # 更换golong 1.22
